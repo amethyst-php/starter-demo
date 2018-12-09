@@ -70,14 +70,9 @@
             "php artisan key:generate"
         ],
         "post-install-cmd": [
-            "Illuminate\\Foundation\\ComposerScripts::postInstall",
-            "php artisan optimize",
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "php artisan migrate --force",
             "php artisan install --force"
-        ],
-        "post-update-cmd": [
-            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
-            "php artisan optimize"
         ]
     },
     "config": {
