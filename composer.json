@@ -71,8 +71,7 @@
         ],
         "post-install-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "php artisan migrate --force",
-            "php artisan install --force"
+            "php artisan migrate --force"
         ]
     },
     "config": {
